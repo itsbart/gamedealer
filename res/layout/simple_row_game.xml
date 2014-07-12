@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"    
+    android:descendantFocusability="blocksDescendants" >
+    
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_toLeftOf="@+id/discount"
+        android:layout_alignParentLeft="true"
+        android:text="Age of Empires III: Gold Edition"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-light" />
+
+    <TextView
+        android:id="@+id/initialPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gameTitle"
+        android:layout_below="@+id/gameTitle"
+        android:text=""
+        android:textColor="#353535"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:fontFamily="sans-serif-thin" />
+
+    <TextView
+        android:id="@+id/discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gameTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/gameTitle"
+        android:text="20%"
+        android:textColor="#669900"
+        android:textSize="22sp"
+        android:fontFamily="sans-serif-thin"/>
+
+    <TextView
+        android:id="@+id/finalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/initialPrice"
+        android:layout_alignBottom="@+id/initialPrice"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/initialPrice"
+        android:text="10.87$"
+        android:textSize="18sp"
+        android:textColor="#CC0000"
+        android:fontFamily="sans-serif-thin"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+	</RelativeLayout>
+</RelativeLayout>
